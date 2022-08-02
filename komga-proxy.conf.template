@@ -1,0 +1,10 @@
+server {
+    listen 80;
+
+    server_name x.x.x.x;
+
+    location / {
+       proxy_set_header Authorization ${NGINX_AUTH_HEADER};
+       proxy_pass http://ip:port;
+    }
+}

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  paperback-komga-proxy:
+    container_name: paperback-komga-proxy
+    image: nginx
+    ports:
+      - '3021:80'
+    environment:
+      - NGINX_AUTH_HEADER="${AUTH_HEADER}"
+    volumes:
+      - './komga-proxy.conf.template:/etc/nginx/templates/komga-proxy.conf.template:ro'
