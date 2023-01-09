@@ -1,4 +1,8 @@
-# Paperback Komga Proxy
+# Deprecated 
+
+Downloads are fixed as of the Paperback extension v1.2.9.
+
+## Paperback Komga Proxy
 
 This was created as a workaround to enable downloads from the Paperback (Komga) source in Paperback v0.7.
 
@@ -7,7 +11,7 @@ To run this, you need:
 - Docker
 - docker-compose
 
-## How to configure the proxy
+### How to configure the proxy
 
 1. Clone this repository
 2. Copy the `.env.example` to a new file named `.env`
